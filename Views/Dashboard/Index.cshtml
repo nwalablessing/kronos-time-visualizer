@@ -1,36 +1,8 @@
-﻿@{
-    ViewData["Title"] = "RTT Dashboard";
-}
-
-<h2>@ViewData["Title"]</h2>
-
-<!-- Chart for RTT -->
-<canvas id="rttChart" width="600" height="400"></canvas>
-
-<!-- Alert Section -->
-<div id="alertSection" style="margin-top: 20px; font-weight: bold; color: red;"></div>
-
-<!-- Node Info Table -->
-<div id="nodeTableSection" style="margin-top: 40px;">
-    <h3>🧩 Node Info</h3>
-    <table border="1" cellpadding="8">
-        <thead>
-            <tr>
-                <th>Data Center</th>
-                <th>Role</th>
-                <th>RTT (ms)</th>
-                <th>Sync Delta (s)</th>
-            </tr>
-        </thead>
-        <tbody id="nodeTableBody"></tbody>
-    </table>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+﻿<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
     async function loadRttData() {
         try {
-            const response = await fetch('https://localhost:7072/api/metrics/rtt');
+            const response = await fetch('/api/metrics/rtt'); // ✅ Fixed URL
             const json = await response.json();
 
             const rttData = json.rttData;
