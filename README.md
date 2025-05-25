@@ -75,7 +75,8 @@ This dashboard is the answer. It's a reflection of my curiosity, my love for cle
 
 ### 🔧 Dashboard Chart View  
 ### Full Dashboard
-![Dashboard View](./dashboard1%20.jpg)
+![Dashboard View](./Fullscreen%20snapshot.jpg)
+
 
 ### Node Table + Alerts
 ![Node Table](./dashboard2.jpg)
