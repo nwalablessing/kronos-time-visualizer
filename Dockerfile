@@ -3,8 +3,8 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
 # Copy solution and project files
-COPY *.sln .
-COPY *.csproj ./
+COPY *.sln . 
+COPY *.csproj ./ 
 RUN dotnet restore
 
 # Copy everything else and build
