@@ -50,6 +50,7 @@ This dashboard is the answer. It's a reflection of my curiosity, my love for cle
 | **Render.com**             | Hosting the dashboard online                        |
 | **GitHub**                 | Source control and project publishing               |
 | **Visual Studio 2022**     | Full .NET IDE used for implementation and debugging |
+| ** GO (Golang)             | Language used in Rubrik Kronos distributed backend  |
 
 ---
 
