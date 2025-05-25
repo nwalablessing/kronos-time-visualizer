@@ -63,25 +63,21 @@ This dashboard is the answer. It's a reflection of my curiosity, my love for cle
 
 ---
 
-## 📸 Visual Demo
 
-### 🔍 Chart-Based RTT Visualization
 
-![Chart View](https://raw.githubusercontent.com/nwalablessing/kronos-time-visualizer/main/dashboard1.jpg)
+## 📷 Screenshots
+
+| Chart View | Node Table |
+|------------|------------|
+| ![Chart View](./dashboard1.jpg) | ![Table View](./dashboard2.jpg) |
 
 ---
-
-### 📢 Alerts + Node Info Table
-
-![Table + Alert](https://raw.githubusercontent.com/nwalablessing/kronos-time-visualizer/main/dashboard2.jpg)
-
 ---
 
 ### 🌐 Deployed Live on Render
 
-![Live Render](https://raw.githubusercontent.com/nwalablessing/kronos-time-visualizer/main/dashboard3.jpg)
+🌐 [https://kronos-time-visualizer.onrender.com/Dashboard](https://kronos-time-visualizer.onrender.com/Dashboard)
 
----
 
 ## 🤝 Contribution & Purpose
 
