@@ -74,7 +74,7 @@ This dashboard is the answer. It's a reflection of my curiosity, my love for cle
 ## 📸 Screenshots
 
 ### 🔧 Dashboard Chart View  
-![Chart View](https://raw.githubusercontent.com/nwalablessing/kronos-time-visualizer/main/dashboard1.jpg)
+![Chart View](https://raw.githubusercontent.com/nwalablessing/kronos-time-visualizer/main/dashboard 1.jpg)
 
 ---
 
