@@ -74,13 +74,11 @@ This dashboard is the answer. It's a reflection of my curiosity, my love for cle
 ## 📸 Screenshots
 
 ### 🔧 Dashboard Chart View  
-![Chart View](https://raw.githubusercontent.com/nwalablessing/kronos-time-visualizer/main/dashboard 1.jpg)
+### Full Dashboard
+![Dashboard View](./dashboard1%20.jpg)
 
----
-
-### 📋 Node Info + Alert View  
-![Node Table](https://raw.githubusercontent.com/nwalablessing/kronos-time-visualizer/main/dashboard2.jpg)
-
+### Node Table + Alerts
+![Node Table](./dashboard2.jpg)
 ---
 ---
 
