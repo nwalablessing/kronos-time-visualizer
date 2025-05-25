@@ -69,7 +69,8 @@ This dashboard is the answer. It's a reflection of my curiosity, my love for cle
 
 | Chart View | Node Table |
 |------------|------------|
-| ![Chart View](./dashboard1.jpg) | ![Table View](./dashboard2.jpg) |
+![Chart View](https://raw.githubusercontent.com/nwalablessing/kronos-time-visualizer/main/dashboard1.jpg)
+ | ![Table View](./dashboard2.jpg) |
 
 ---
 ---
