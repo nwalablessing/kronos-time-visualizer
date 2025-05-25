@@ -78,11 +78,6 @@ This dashboard is the answer. It's a reflection of my curiosity, my love for cle
 ![Dashboard View](./Fullscreen%20snapshot.jpg)
 
 
-### Node Table + Alerts
-![Node Table](./dashboard2.jpg)
----
----
-
 ### 🌐 Deployed Live on Render
 
 🌐 [https://kronos-time-visualizer.onrender.com/Dashboard](https://kronos-time-visualizer.onrender.com/Dashboard)
