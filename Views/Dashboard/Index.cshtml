@@ -1,14 +1,44 @@
-﻿<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+﻿@{
+    ViewData["Title"] = "RTT Dashboard";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<!-- Chart for RTT -->
+<canvas id="rttChart" width="600" height="400"></canvas>
+
+<!-- Alert Section -->
+<div id="alertSection" style="margin-top: 20px; font-weight: bold; color: red;"></div>
+
+<!-- Node Info Table -->
+<div id="nodeTableSection" style="margin-top: 40px;">
+    <h3>🧩 Node Info</h3>
+    <table border="1" cellpadding="8">
+        <thead>
+            <tr>
+                <th>Data Center</th>
+                <th>Role</th>
+                <th>RTT (ms)</th>
+                <th>Sync Delta (s)</th>
+            </tr>
+        </thead>
+        <tbody id="nodeTableBody"></tbody>
+    </table>
+</div>
+
+<!-- Chart.js library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <script>
     async function loadRttData() {
         try {
-            const response = await fetch('/api/metrics/rtt'); // ✅ Fixed URL
+            const response = await fetch('/api/metrics/rtt'); // ✅ Use relative path
             const json = await response.json();
 
             const rttData = json.rttData;
             const alerts = json.alerts;
 
-            // Chart Data
+            // Populate chart
             const labels = rttData.map(item => item.dataCenter);
             const rttValues = rttData.map(item => item.rtt);
 
@@ -46,15 +76,13 @@
                 }
             });
 
-            // Alert Section
+            // Show alerts
             const alertDiv = document.getElementById('alertSection');
-            if (alerts.length > 0) {
-                alertDiv.innerHTML = alerts.map(a => a.message).join("<br>");
-            } else {
-                alertDiv.innerHTML = "✅ All data centers are healthy.";
-            }
+            alertDiv.innerHTML = alerts.length > 0
+                ? alerts.map(a => a.message).join("<br>")
+                : "✅ All data centers are healthy.";
 
-            // Node Info Table
+            // Populate table
             const tableBody = document.getElementById('nodeTableBody');
             tableBody.innerHTML = rttData.map(node => `
                 <tr>
@@ -67,6 +95,7 @@
 
         } catch (error) {
             console.error("Failed to load RTT data:", error);
+            document.getElementById('alertSection').innerText = "❌ Error loading data.";
         }
     }
 
