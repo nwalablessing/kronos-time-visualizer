@@ -1,50 +1,58 @@
-# Kronos Time Visualizer ⏱️📊
+# Kronos Time Visualizer ⏱📊
 
-This is a real-time dashboard for monitoring **RTT (Round Trip Time)** and **time drift alerts** across nodes in a distributed system powered by [Rubrik's Kronos](https://github.com/rubrikinc/kronos).
+A real-time ASP.NET Core dashboard for monitoring **Round Trip Time (RTT)** and **time drift alerts** across distributed nodes — inspired by and powered by [Rubrik’s Kronos](https://github.com/rubrikinc/kronos).
 
----
-
-## 🔍 Features
-
-- 📈 Interactive Chart for RTT across data centers
-- ⚠️ Drift Alerts when RTT > threshold
-- 📋 Node Role Table showing Oracle/Follower + Sync Delta (drift from oracle)
-- ✅ Built with ASP.NET Core MVC and Chart.js
+🔗 **Live Dashboard:**  
+🌍 [https://kronos-time-visualizer.onrender.com/Dashboard](https://kronos-time-visualizer.onrender.com/Dashboard)
 
 ---
 
-## 📸 Preview
+## 💡 Why I Built This
 
-![RTT Chart Screenshot](screenshots/rtt_dashboard.png)
+I created this project as part of my journey in building intelligent, practical tools that support infrastructure visibility. Clock drift and RTT discrepancies can disrupt distributed systems — and having a visual, real-time monitor makes diagnosis and decision-making easier.
 
----
-
-## 🛠️ How It Works
-
-The backend simulates time sync data and exposes it via REST (`/api/metrics/rtt`), which the frontend fetches using JavaScript to:
-
-- Plot RTT values as a line chart
-- Display alerts for unstable nodes
-- Show each node’s role and time delta (drift)
+This dashboard wasn’t just about building something technical — it was about making performance **tangible, observable, and sharable** in real time.
 
 ---
 
-## 📦 Tech Stack
+## 🛠 Tools & Technologies Used
 
-- ASP.NET Core MVC (C#)
-- Chart.js
-- REST API
-
----
-
-## 👩🏽‍💻 Author
-
-**Blessing Nwala**  
-🔗 [LinkedIn](https://www.linkedin.com/in/blessing-nwala-319012118)  
-📁 [Portfolio](https://nwalablessing.github.io/blessingunwala.github.io/)  
+| Tool/Tech               | Purpose |
+|-------------------------|---------|
+| **ASP.NET Core (8.0)**  | Backend and web app framework |
+| **C#**                  | Backend logic and controller setup |
+| **Chart.js**            | Real-time interactive data charts |
+| **Render**              | Cloud platform for real-time deployment |
+| **Docker**              | Containerization and deployment workflow |
+| **GitHub**              | Version control and collaboration |
+| **JSON API**            | Lightweight format for data exchange |
 
 ---
 
-## 📂 Repository
+## 📈 Features
 
-https://github.com/nwalablessing/kronos-time-visualizer
+- 📊 Real-time RTT Chart  
+- ⚠️ Drift Alerts when RTT exceeds threshold  
+- 🧠 Sync Delta (Oracle vs Follower)  
+- 🧾 Node Role Table: Oracle / Follower  
+- 🚀 Live public URL (no local setup needed)  
+- 🐳 Dockerfile included for containerized builds  
+
+---
+
+## 📸 Screenshots
+
+### 🔧 Dashboard in Action
+![Dashboard View](./dashboard1%20.jpg)
+
+### 📋 Node Information Table
+![Node Table](./dashboard2.jpg)
+
+---
+
+## 🧪 How to Run Locally
+
+```bash
+git clone https://github.com/nwalablessing/kronos-time-visualizer.git
+cd kronos-time-visualizer
+dotnet run
